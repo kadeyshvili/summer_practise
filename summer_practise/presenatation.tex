@@ -1,0 +1,97 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\usepackage{tikz}
+\usetheme{Berkeley}
+\usecolortheme{default}
+
+%Russian-specific packages
+%--------------------------------------
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+%--------------------------------------
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+%------------------------------------------------------------
+%This block of code defines the information to appear in the
+%Title page
+\title[About Beamer] 
+{Presentation for LaTex course}
+
+\author[Kadeyshvili] % (optional)
+{Polina Kadeyshvili\inst{1}}
+
+\date[LTXC 2022] % (optional)
+{LaTeX Course, July 2022}
+
+\logo{\includegraphics[height=1cm]{images/logo.jpg}}
+
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+
+
+\section{Introduction}
+
+\begin{frame}
+\frametitle{Introduction}
+
+\begin{itemize}
+    \item In this presentation I will recreate one of the slides form our course in linear algebre and geometry
+
+\end{itemize}
+\end{frame}
+
+
+
+
+
+
+\section{Критерий диагонализуемости линейного оператора}
+\begin{frame}
+\frametitle{Критерий}
+\begin{center}
+    V - векторное простронство над полем F, dimV = n $\phi : V \xrightarrow{} V $ - линейный оператор
+\end{center}
+\begin{block}{Теорема(критерий диагонализуемости)}
+$\phi$ 
+\text диагонализуем тогда и только тогда, когда одновременно выполнены следующие условия:\\
+\begin{enumerate}  
+	\item $\chi(t)$ - разлагается на линейные множители над F
+	\item геоментрическая мультипликативность равна алгебраической $\forall \lambda \in Spec\phi$
+\end{enumerate}
+\end{block}
+\end{frame}
+
+
+
+\section{Conclusion}
+\begin{frame}
+\frametitle{Conclusion}
+\begin{center}
+    Thank you for your attention!
+\end{center}
+\end{frame}
+\end{document}
